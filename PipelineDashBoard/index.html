@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Policy Engine Test Result Dashboard - 2026-02-05</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  body {font-family: Arial, sans-serif; margin: 20px;}
+  h1, h2 {color: #2c3e50;}
+  table {border-collapse: collapse; width: 100%; margin-bottom: 30px;}
+  th, td {border: 1px solid #ddd; padding: 8px; text-align: center;}
+  th {background-color: #f2f2f2;}
+  .chart-row {display: flex; flex-wrap: wrap; justify-content: space-around; margin-bottom: 40px;}
+  .chart-container {width: 300px; margin: 10px;}
+</style>
+</head>
+<body>
+<h1>Policy Engine Test Result Dashboard - 2026-02-05</h1>
+
+<!-- Category: Policy -->
+<h2>Policy</h2>
+<table>
+  <thead>
+    <tr><th>Test Suite</th><th>Total</th><th>Passed</th><th>Failed</th><th>Duration (h)</th><th>Build</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Central-Interpreter-Component-Test</td>
+      <td>983</td>
+      <td>948</td>
+      <td>35</td>
+      <td>3.188</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/Policy-Engine-Daily-DUTI/job/Central-Interpreter-Automation/job/Central-Interpreter-Component-Test/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>Execution-Planner-Component-Test</td>
+      <td>550</td>
+      <td>549</td>
+      <td>1</td>
+      <td>1.878</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/Policy-Engine-Daily-DUTI/job/Execution-Planner-Automation/job/Execution-Planner-Component-Test/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>Scheduler-Component-Test</td>
+      <td>412</td>
+      <td>412</td>
+      <td>0</td>
+      <td>5.459</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/Policy-Engine-Daily-DUTI/job/Scheduler-Automation/job/Scheduler-Component-Test/">02/01</a></td>
+    </tr>
+    <tr>
+      <td>Script-Component-Test</td>
+      <td>311</td>
+      <td>311</td>
+      <td>0</td>
+      <td>0.452</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/Policy-Engine-Daily-DUTI/job/Script-Automation/job/Script-Component-Test/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>PolicyV3Component</td>
+      <td>1853</td>
+      <td>1852</td>
+      <td>1</td>
+      <td>1.411</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/Policy-Engine-Daily-DUTI/job/Policy-Automation/job/PolicyV3-DUTI-Standalone/job/PolicyV3Component/">02/05</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="chart-row">
+  <!-- Pie charts for Policy -->
+  <div class="chart-container"><canvas id="pie_Central-Interpreter-Component-Test"></canvas></div>
+  <div class="chart-container"><canvas id="pie_Execution-Planner-Component-Test"></canvas></div>
+  <div class="chart-container"><canvas id="pie_Scheduler-Component-Test"></canvas></div>
+  <div class="chart-container"><canvas id="pie_Script-Component-Test"></canvas></div>
+  <div class="chart-container"><canvas id="pie_PolicyV3Component"></canvas></div>
+</div>
+<div class="chart-row">
+  <!-- Trend charts (failed count) for Policy -->
+  <div class="chart-container"><canvas id="trend_Central-Interpreter-Component-Test"></canvas></div>
+  <div class="chart-container"><canvas id="trend_Execution-Planner-Component-Test"></canvas></div>
+  <div class="chart-container"><canvas id="trend_Scheduler-Component-Test"></canvas></div>
+</div>
+
+<!-- Category: Job Engine -->
+<h2>Job Engine</h2>
+<table>
+  <thead>
+    <tr><th>Test Suite</th><th>Total</th><th>Passed</th><th>Failed</th><th>Duration (h)</th><th>Build</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10.198.19.192-JobEngine-E2E</td>
+      <td>211</td>
+      <td>211</td>
+      <td>0</td>
+      <td>3.933</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/PLC-Core-Daily-SUTI/job/Job-Engine-E2E/job/10.198.19.192-JobEngine-E2E/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>10.198.19.195-Resource-Management</td>
+      <td>66</td>
+      <td>51</td>
+      <td>15</td>
+      <td>4.580</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/PLC-Core-Daily-SUTI/job/Job-Engine-E2E/job/10.198.19.195-Resource-Management/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>Job-Creator-Component-Test</td>
+      <td>184</td>
+      <td>176</td>
+      <td>8</td>
+      <td>2.441</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/Policy-Engine-Daily-DUTI/job/Job-Creator-Automation/job/Job-Creator-Component-Test/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>Job-Dispatcher-Component-Test</td>
+      <td>107</td>
+      <td>107</td>
+      <td>0</td>
+      <td>4.515</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/Policy-Engine-Daily-DUTI/job/Job-Dispatcher-Automation/job/Job-Dispatcher-Component-Test/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>Job-Executor-Component-Test</td>
+      <td>110</td>
+      <td>110</td>
+      <td>0</td>
+      <td>2.177</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/Policy-Engine-Daily-DUTI/job/Job-Executor-Automation/job/Job-Executor-Component-Test/">02/05</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="chart-row">
+  <!-- Pie charts for Job Engine -->
+  <div class="chart-container"><canvas id="pie_10.198.19.192-JobEngine-E2E"></canvas></div>
+  <div class="chart-container"><canvas id="pie_10.198.19.195-Resource-Management"></canvas></div>
+  <div class="chart-container"><canvas id="pie_Job-Creator-Component-Test"></canvas></div>
+  <div class="chart-container"><canvas id="pie_Job-Dispatcher-Component-Test"></canvas></div>
+  <div class="chart-container"><canvas id="pie_Job-Executor-Component-Test"></canvas></div>
+</div>
+<div class="chart-row">
+  <!-- Trend charts (failed count) for Job Engine -->
+  <div class="chart-container"><canvas id="trend_10.198.19.192-JobEngine-E2E"></canvas></div>
+  <div class="chart-container"><canvas id="trend_10.198.19.195-Resource-Management"></canvas></div>
+  <div class="chart-container"><canvas id="trend_Job-Creator-Component-Test"></canvas></div>
+</div>
+
+<!-- Category: SUTI -->
+<h2>SUTI</h2>
+<table>
+  <thead>
+    <tr><th>Test Suite</th><th>Total</th><th>Passed</th><th>Failed</th><th>Duration (h)</th><th>Build</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10.198.19.193-Mock</td>
+      <td>136</td>
+      <td>125</td>
+      <td>11</td>
+      <td>1.821</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/PLC-Core-Daily-SUTI/job/Standalone/job/10.198.19.193-Mock/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>10.198.19.194-Cucumber</td>
+      <td>486</td>
+      <td>477</td>
+      <td>9</td>
+      <td>13.336</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/PLC-Core-Daily-SUTI/job/Standalone/job/10.198.19.194-Cucumber/">02/04</a></td>
+    </tr>
+    <tr>
+      <td>10.198.19.198-VM</td>
+      <td>122</td>
+      <td>111</td>
+      <td>11</td>
+      <td>2.305</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/PLC-Core-Daily-SUTI/job/Standalone/job/10.198.19.198-VM/">02/05</a></td>
+    </tr>
+    <tr>
+      <td>10.198.19.208-SelfService</td>
+      <td>10</td>
+      <td>9</td>
+      <td>1</td>
+      <td>1.531</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/PLC-Core-Daily-SUTI/job/Standalone/job/10.198.19.208-SelfService/">02/03</a></td>
+    </tr>
+    <tr>
+      <td>10.198.19.56-CucumberNew</td>
+      <td>254</td>
+      <td>222</td>
+      <td>32</td>
+      <td>11.172</td>
+      <td><a href="https://idpsppdm-jenkins.cec.lab.emc.com/job/ecdm/job/Policy-Engine/job/PLC-Core-Daily-SUTI/job/Standalone/job/10.198.19.56-CucumberNew/">02/04</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="chart-row">
+  <!-- Pie charts for SUTI -->
+  <div class="chart-container"><canvas id="pie_10.198.19.193-Mock"></canvas></div>
+  <div class="chart-container"><canvas id="pie_10.198.19.194-Cucumber"></canvas></div>
+  <div class="chart-container"><canvas id="pie_10.198.19.198-VM"></canvas></div>
+  <div class="chart-container"><canvas id="pie_10.198.19.208-SelfService"></canvas></div>
+  <div class="chart-container"><canvas id="pie_10.198.19.56-CucumberNew"></canvas></div>
+</div>
+<div class="chart-row">
+  <!-- Trend charts (failed count) for SUTI -->
+  <div class="chart-container"><canvas id="trend_10.198.19.193-Mock"></canvas></div>
+  <div class="chart-container"><canvas id="trend_10.198.19.194-Cucumber"></canvas></div>
+  <div class="chart-container"><canvas id="trend_10.198.19.56-CucumberNew"></canvas></div>
+</div>
+
+<script>
+// Helper to create pie chart
+function createPie(id, passed, failed) {
+  new Chart(document.getElementById(id), {
+    type: 'pie',
+    data: {
+      labels: ['Passed', 'Failed'],
+      datasets: [{
+        data: [passed, failed],
+        backgroundColor: ['#2ecc71', '#e74c3c']
+      }]
+    },
+    options: {responsive: true, plugins: {legend: {position: 'bottom'}}}
+  });
+}
+// Helper to create line chart for failed trend
+function createTrend(id, labels, data) {
+  new Chart(document.getElementById(id), {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Failed',
+        data: data,
+        borderColor: '#e74c3c',
+        backgroundColor: 'rgba(231,76,60,0.2)',
+        fill: true,
+        tension: 0.2
+      }]
+    },
+    options: {responsive: true, scales: {y: {beginAtZero: true}}}
+  });
+}
+// Data for charts (latest & trend)
+// Policy
+createPie('pie_Central-Interpreter-Component-Test', 948, 35);
+createPie('pie_Execution-Planner-Component-Test', 549, 1);
+createPie('pie_Scheduler-Component-Test', 412, 0);
+createPie('pie_Script-Component-Test', 311, 0);
+createPie('pie_PolicyV3Component', 1852, 1);
+createTrend('trend_Central-Interpreter-Component-Test', ['01/30','01/31','02/01','02/02','02/02','02/03','02/04','02/05'], [1,2,1,1,6,2,53,35]);
+createTrend('trend_Execution-Planner-Component-Test', ['01/29','01/30','01/31','02/01','02/02','02/03','02/04','02/05'], [0,0,0,0,0,0,1,0]);
+createTrend('trend_Scheduler-Component-Test', ['01/30','01/31','02/01','02/01'], [1,1,1,0]);
+// Job Engine
+createPie('pie_10.198.19.192-JobEngine-E2E', 211, 0);
+createPie('pie_10.198.19.195-Resource-Management', 51, 15);
+createPie('pie_Job-Creator-Component-Test', 176, 8);
+createPie('pie_Job-Dispatcher-Component-Test', 107, 0);
+createPie('pie_Job-Executor-Component-Test', 110, 0);
+createTrend('trend_10.198.19.192-JobEngine-E2E', ['01/30','01/31','02/01','02/02','02/03','02/03','02/04','02/05'], [0,0,0,0,0,0,0,0]);
+createTrend('trend_10.198.19.195-Resource-Management', ['01/30','01/31','02/01','02/02','02/03','02/04','02/05'], [0,1,0,0,0,13,15]);
+createTrend('trend_Job-Creator-Component-Test', ['01/30','01/30','01/31','02/01','02/02','02/03','02/04','02/05'], [1,0,0,0,1,0,1,8]);
+// SUTI
+createPie('pie_10.198.19.193-Mock', 125, 11);
+createPie('pie_10.198.19.194-Cucumber', 477, 9);
+createPie('pie_10.198.19.198-VM', 111, 11);
+createPie('pie_10.198.19.208-SelfService', 9, 1);
+createPie('pie_10.198.19.56-CucumberNew', 222, 32);
+createTrend('trend_10.198.19.193-Mock', ['02/02','02/03','02/04','02/05','02/05'], [1,3,11,10,1]);
+createTrend('trend_10.198.19.194-Cucumber', ['01/29','01/30','01/31','02/01','02/02','02/03','02/04'], [3,2,5,3,5,6,9]);
+createTrend('trend_10.198.19.56-CucumberNew', ['01/29','01/30','01/31','02/01','02/02','02/03','02/04'], [8,9,11,7,5,28,32]);
+</script>
+
+</body>
+</html>
